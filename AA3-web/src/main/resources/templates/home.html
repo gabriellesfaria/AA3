@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout}">
+<head>
+<meta charset="UTF-8" />
+</head>
+<body>
+	<section class="layout-content" layout:fragment="corpo">
+
+		<div class="container" style="text-align: center;">
+			<h1><span th:text="#{title.label}"></span></h1>
+			
+			<div sec:authorize="hasAuthority('ADMIN')">
+			</div>
+			
+			<div sec:authorize="hasAuthority('ADMIN')">
+			</div>
+		</div>
+
+	</section>
+</body>
+</html>
